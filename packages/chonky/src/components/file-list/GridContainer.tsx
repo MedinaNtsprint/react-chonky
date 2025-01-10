@@ -40,7 +40,7 @@ export const getGridConfig = (
   viewConfig: FileViewConfigGrid,
   isMobileBreakpoint: boolean,
 ): GridConfig => {
-  const gutter = isMobileBreakpoint ? 5 : 8;
+  const gutter = isMobileBreakpoint ? 10 : 16;
   const scrollbar = isMobileDevice() ? 0 : 18;
 
   let columnCount: number;

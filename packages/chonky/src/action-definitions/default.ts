@@ -125,8 +125,8 @@ export const DefaultActions = {
       name: 'Switch to Compact',
       toolbar: true,
       icon: ChonkyIconName.compact,
-      // iconOnly: true,
-      group: 'Options',
+      iconOnly: true,
+
     },
   } as const),
   /**

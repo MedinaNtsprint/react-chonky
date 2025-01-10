@@ -434,7 +434,7 @@ const files = [
           }))}
           // fileActions={fileActions}
           // onFileAction={handleFileAction}
-          disableDefaultFileActions={[
+          disableDefaultFileActions={[  
             ChonkyActions.SortFilesByName.id,
             ChonkyActions.SortFilesByDate.id,
             ChonkyActions.SortFilesBySize.id,
