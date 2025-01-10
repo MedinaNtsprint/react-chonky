@@ -43,9 +43,8 @@ export const ToolbarButton: React.FC<ToolbarButtonProps> = React.memo((props) =>
 
   const className = c({
     [externalClassName ?? '']: true,
-    [classes.baseButton]: true,
     [classes.iconOnlyButton]: iconOnly,
-    [classes.activeButton]: !!active,
+    [classes.buttonActive]: !!active,
   });
   return (
     <Button className={className} onClick={onClick} title={tooltip ? tooltip : text} disabled={disabled || !onClick}>
@@ -61,18 +60,6 @@ export const ToolbarButton: React.FC<ToolbarButtonProps> = React.memo((props) =>
 });
 
 const useStyles = makeGlobalChonkyStyles((theme) => ({
-  baseButton: {
-    fontSize: important(theme.toolbar.fontSize),
-    textTransform: important('none'),
-    letterSpacing: important(0),
-    minWidth: important('auto'),
-    lineHeight: theme.toolbar.lineHeight,
-    height: theme.toolbar.size,
-    paddingBottom: important(0),
-    paddingTop: important(0),
-    paddingLeft: theme.toolbar.buttonPadding,
-    paddingRight: theme.toolbar.buttonPadding,
-  },
   iconWithText: {
     marginRight: 8,
   },
@@ -85,8 +72,9 @@ const useStyles = makeGlobalChonkyStyles((theme) => ({
     marginLeft: 2,
     marginTop: 1,
   },
-  activeButton: {
-    color: important(theme.colors.textActive),
+  buttonActive: {
+    backgroundColor: important(theme.colors.backgroundActive),
+    color:important(theme.colors.buttonActive),
   },
 }));
 

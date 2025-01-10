@@ -5,6 +5,7 @@ import { createUseStyles } from 'react-jss';
 import { DeepPartial } from 'tsdef';
 
 export const lightTheme = {
+  fontFamily: "'Poppins', sans-serif", 
   colors: {
     debugRed: '#fabdbd',
     debugBlue: '#bdd8fa',
@@ -13,6 +14,8 @@ export const lightTheme = {
     debugYellow: '#fae9bd',
 
     textActive: '#09f',
+    buttonActive: 'rgb(255 255 255 / 1)',
+    backgroundActive:'hsl(210 40% 52%)',
   },
 
   fontSizes: {
@@ -78,6 +81,24 @@ export const lightTheme = {
     iconBorderRadius: 5,
     fontSize: 14,
   },
+  nextUIButton:{
+     boxSizing:'border-box',
+    display: 'none',
+    overflow: 'hidden', 
+    position: 'relative', 
+    zIndex: 0,
+    justifyContent: 'center',
+    outlineStyle: 'none',
+    fontWeight: 400,
+    color: 'rgb(255 255 255 / 1)',
+    whiteSpace: 'nowrap', 
+    appearance: 'none',
+    userSelect: 'none', 
+    height: '2.5rem',
+
+
+    
+  }
 };
 
 export type ChonkyTheme = typeof lightTheme;

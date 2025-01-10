@@ -72,6 +72,8 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
       }
       return important(color);
     },
+  fontFamily: important("'Poppins', sans-serif"), 
+
   },
   disabledBreadcrumb: {
     // Constant function here is on purpose. Without the function, the color here
