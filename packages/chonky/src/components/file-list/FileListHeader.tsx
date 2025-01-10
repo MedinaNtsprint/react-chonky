@@ -10,6 +10,8 @@ export const FileListHeader: React.FC<FileListHeaderPropos> = ({width}) => {
 
   return (
     <div className={classes.listHeader} style={{width}}>
+      <div></div>
+      <div ></div>
       <div className={classes.listFileEntryIcon}></div>
       <div className={classes.listFileEntryName}>Name</div>
       <div className={classes.listFileEntryProperty}>Modified Date</div>
@@ -28,20 +30,38 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     borderBottom: `1px solid ${theme.palette.divider}`,
     padding: [2, 4],
   },
+  listFileEntrySelection: {
+    opacity: 0.6,
+  },
   listFileEntryIcon: {
     width: theme.listFileEntry.iconFontSize,
     padding: [2, 4],
   },
   listFileEntryName: {
+    textOverflow: 'ellipsis',
+    boxSizing: 'border-box',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
     flex: '1 1 300px',
-    paddingLeft: 5,
+    paddingLeft: 8,
+    zIndex: 20,
   },
   listFileEntryProperty: {
-    flex: '0 1 115px',
-    padding: [3, 20],
+    fontSize: theme.listFileEntry.propertyFontSize,
+    boxSizing: 'border-box',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    flex: '0 1 150px',
+    padding: [2, 8],
+    zIndex: 20,
   },
   listFileEntrySize: {
-    flex: '0 1 120px',
-    padding: [3, 28],
+    fontSize: theme.listFileEntry.propertyFontSize,
+    boxSizing: 'border-box',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    flex: '0 1 150px',
+    padding: [2, 8],
+    zIndex: 20,
   },
 }));
