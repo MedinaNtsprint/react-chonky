@@ -82,20 +82,33 @@ export const DefaultActions = {
   /**
    * Action that enables List view.
    */
+  // EnableListView: defineFileAction({
+  //   id: 'enable_list_view',
+  //   fileViewConfig: {
+  //     mode: FileViewMode.List,
+  //     entryHeight: 30,
+  //   },
+  //   button: {
+  //     name: 'Switch to List',
+  //     toolbar: true,
+  //     icon: ChonkyIconName.list,
+  //     // iconOnly: true,
+  //     group: 'Options',
+  //   },
+  // } as const),
   EnableListView: defineFileAction({
     id: 'enable_list_view',
     fileViewConfig: {
-      mode: FileViewMode.List,
-      entryHeight: 30,
+        mode: FileViewMode.List,
+        entryHeight: 30,
     },
     button: {
-      name: 'Switch to List',
-      toolbar: true,
-      icon: ChonkyIconName.list,
-      // iconOnly: true,
-      group: 'Options',
+        name: 'Switch to List view',
+        toolbar: true,
+        icon: ChonkyIconName.list,
+        iconOnly: true,
     },
-  } as const),
+} as const),
   /**
    * Action that enables Compact view. Note that compact view is still
    * experimental and should not be used in production.
@@ -119,17 +132,17 @@ export const DefaultActions = {
   /**
    * Action that enables Grid view.
    */
+
   EnableGridView: defineFileAction({
     id: 'enable_grid_view',
-    fileViewConfig: { mode: FileViewMode.Grid, entryWidth: 100, entryHeight: 100 },
+    fileViewConfig: { mode: FileViewMode.Grid, entryWidth: 165, entryHeight: 130 },
     button: {
-      name: 'Switch to Grid',
-      toolbar: true,
-      icon: ChonkyIconName.smallThumbnail,
-      // iconOnly: true,
-      group: 'Options',
+        name: 'Switch to Grid view',
+        toolbar: true,
+        icon: ChonkyIconName.smallThumbnail,
+        iconOnly: true,
     },
-  } as const),
+} as const),
   /**
    * Action that sorts files by `file.name`.
    */

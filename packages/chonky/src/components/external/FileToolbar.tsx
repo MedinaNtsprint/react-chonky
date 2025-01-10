@@ -37,7 +37,7 @@ export const FileToolbar: React.FC<FileToolbarProps & { children?: ReactNode }> 
     <div className={classes.toolbarWrapper}>
       <div className={classes.toolbarContainer}>
         <div className={classes.toolbarLeft}>
-          <ToolbarSearch />
+          {/* <ToolbarSearch /> */}
           {!hideToolbarInfo && <ToolbarInfo />}
           {children}
         </div>

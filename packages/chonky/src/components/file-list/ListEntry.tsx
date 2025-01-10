@@ -31,6 +31,7 @@ export const ListEntry: React.FC<FileEntryProps> = React.memo(({ file, selected,
   const ChonkyIcon = useContext(ChonkyIconContext);
   const fileEntryHtmlProps = useFileEntryHtmlProps(file);
   return (
+
     <div className={classes.listFileEntry} {...fileEntryHtmlProps}>
       <div className={commonClasses.focusIndicator}></div>
       <div className={c([commonClasses.selectionIndicator, classes.listFileEntrySelection])}></div>
@@ -51,6 +52,7 @@ export const ListEntry: React.FC<FileEntryProps> = React.memo(({ file, selected,
         {file ? fileSizeString ?? <span>—</span> : <TextPlaceholder minLength={10} maxLength={20} />}
       </div>
     </div>
+
   );
 });
 

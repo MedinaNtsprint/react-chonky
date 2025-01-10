@@ -76,7 +76,7 @@ const useStyles = makeGlobalChonkyStyles((theme) => ({
     fontSize: theme.fontSizes.rootPrimary,
     color: theme.palette.text.primary,
     touchAction: 'manipulation', // Disabling zoom on double tap
-    fontFamily: 'sans-serif',
+    fontFamily: "'Poppins', sans-serif", 
     flexDirection: 'column',
     boxSizing: 'border-box',
     textAlign: 'left',

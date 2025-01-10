@@ -1,6 +1,6 @@
 {
-  "name": "@aperturerobotics/chonky",
-  "version": "0.3.1",
+  "name": "@vladimir.medina/chonky",
+  "version": "0.3.2",
   "description": "A File Browser component for React",
   "license": "MIT",
   "homepage": "https://chonky.io/",
@@ -8,6 +8,9 @@
     "name": "Timur Kuzhagaliyev",
     "email": "tim.kuzh@gmail.com",
     "url": "https://foxypanda.me/"
+  },
+  "publishConfig": {
+    "access": "restricted"
   },
   "repository": {
     "type": "git",

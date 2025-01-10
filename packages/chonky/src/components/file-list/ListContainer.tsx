@@ -13,6 +13,7 @@ import { FileViewMode } from '../../types/file-view.types';
 import { useInstanceVariable } from '../../util/hooks-helpers';
 import { makeLocalChonkyStyles } from '../../util/styles';
 import { SmartFileEntry } from './FileEntry';
+import { FileListHeader } from './FileListHeader';
 
 export interface FileListListProps {
   width: number;
@@ -39,6 +40,7 @@ export const ListContainer: React.FC<FileListListProps> = React.memo((props) => 
     const rowRenderer = (data: { index: number; style: CSSProperties }) => {
       return (
         <div style={data.style}>
+
           <SmartFileEntry
             fileId={displayFileIds[data.index] ?? null}
             displayIndex={data.index}
@@ -48,7 +50,9 @@ export const ListContainer: React.FC<FileListListProps> = React.memo((props) => 
       );
     };
 
-    return (
+    return (<div>
+        <FileListHeader height={height} width={width}/>
+
       <FixedSizeList
         ref={listRef as any}
         className={classes.listContainer}
@@ -60,6 +64,8 @@ export const ListContainer: React.FC<FileListListProps> = React.memo((props) => 
       >
         {rowRenderer}
       </FixedSizeList>
+    </div>
+
     );
   }, [classes.listContainer, viewConfig.entryHeight, height, displayFileIds, width, getItemKey]);
 

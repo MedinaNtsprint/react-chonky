@@ -39,13 +39,13 @@ This is a fork of [Chonky] by [TimboKZ].
 Add the forked npm packages:
 
 ```
-yarn add @aperturerobotics/chonky @aperturerobotics/chonky-icon-fontawesome
+yarn add @vladimir.medina/chonky @vladimir.medina/chonky-icon-fontawesome
 ```
 
 Add to your app:
 
 ```typescript
-import { FullFileBrowser } from '@aperturerobotics/chonky'
+import { FullFileBrowser } from '@vladimir.medina/chonky'
 import { ChonkyIconFA } from '@aperturerobotics/chonky-icon-fontawesome'
 
 export function MyComponent() {
@@ -59,7 +59,7 @@ export function MyComponent() {
 
 ### [Click here for documentation and examples.](https://chonky.io/)
 
-> Please [create an issue](https://github.com/aperturerobotics/react-chonky/issues) if you have a
+> Please [create an issue](https://github.com/MedinaNtsprint/react-chonky/issues) if you have a
 > problem or want to request a feature.
 
 ## Developing
@@ -77,6 +77,8 @@ yarn build
 ```
 
 ## License
+
+MIT © Aperture Robotics, LLC. 2025
 
 MIT © Aperture Robotics, LLC. 2023
 
