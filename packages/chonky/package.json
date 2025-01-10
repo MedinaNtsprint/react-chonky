@@ -10,7 +10,7 @@
     "url": "https://foxypanda.me/"
   },
   "publishConfig": {
-    "access": "restricted"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
