@@ -47,7 +47,6 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     zIndex: 20,
   },
   listFileEntryProperty: {
-    fontSize: theme.listFileEntry.propertyFontSize,
     boxSizing: 'border-box',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
@@ -56,7 +55,6 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     zIndex: 20,
   },
   listFileEntrySize: {
-    fontSize: theme.listFileEntry.propertyFontSize,
     boxSizing: 'border-box',
     whiteSpace: 'nowrap',
     overflow: 'hidden',

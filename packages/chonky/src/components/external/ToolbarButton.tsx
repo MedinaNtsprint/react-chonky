@@ -66,6 +66,8 @@ const useStyles = makeGlobalChonkyStyles((theme) => ({
   iconOnlyButton: {
     width: theme.toolbar.size,
     textAlign: 'center',
+    color:important(theme.colors.defaultColor),
+
   },
   iconDropdown: {
     fontSize: '0.7em',

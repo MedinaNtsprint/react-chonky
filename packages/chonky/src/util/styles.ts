@@ -12,6 +12,7 @@ export const lightTheme = {
     debugGreen: '#d2fabd',
     debugPurple: '#d2bdfa',
     debugYellow: '#fae9bd',
+    defaultColor:"#000",
 
     textActive: '#09f',
     buttonActive: 'rgb(255 255 255 / 1)',
@@ -36,7 +37,7 @@ export const lightTheme = {
     size: 30,
     lineHeight: '30px', // `px` suffix is required for `line-height` fields to work
     buttonPadding: 8,
-    fontSize: 15,
+    fontSize: '1.10rem',
     buttonRadius: 4,
   },
 
@@ -77,9 +78,10 @@ export const lightTheme = {
 
   listFileEntry: {
     propertyFontSize: 14,
-    iconFontSize: '1.1em',
+    iconFontSize: '1.20em',
     iconBorderRadius: 5,
-    fontSize: 14,
+    lineHeight: '30px',
+    fontSize: '1.05rem',
   },
   nextUIButton:{
      boxSizing:'border-box',
@@ -121,7 +123,7 @@ export const mobileThemeOverride: DeepPartial<ChonkyTheme> = {
   toolbar: {
     size: 28,
     lineHeight: '28px',
-    fontSize: 13,
+    fontSize:'1rem',
   },
   gridFileEntry: {
     fontSize: 13,
@@ -129,7 +131,7 @@ export const mobileThemeOverride: DeepPartial<ChonkyTheme> = {
   listFileEntry: {
     propertyFontSize: 12,
     iconFontSize: '1em',
-    fontSize: 13,
+    fontSize: '1.10rem',
   },
 };
 
