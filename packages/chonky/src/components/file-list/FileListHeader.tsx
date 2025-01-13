@@ -24,8 +24,8 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
   listHeader: {
     display: 'flex',
     alignItems: 'center',
-    fontSize: theme.listFileEntry.fontSize,
-    fontWeight: 'bold',
+    fontSize: 18,
+    fontWeight: 700,
     backgroundColor: theme.palette.background.paper,
     borderBottom: `1px solid ${theme.palette.divider}`,
     padding: [2, 4],

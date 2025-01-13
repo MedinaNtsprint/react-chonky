@@ -96,16 +96,21 @@ export const lightTheme = {
     whiteSpace: 'nowrap', 
     appearance: 'none',
     userSelect: 'none', 
-    height: '2.5rem',
-
-
-    
+    height: '2.5rem',    
+  },
+  iconOnlyButton:{
+    color:"#000",
+    width: 30,
+    textAlign: 'center',
   }
 };
 
 export type ChonkyTheme = typeof lightTheme;
 
 export const darkThemeOverride: DeepPartial<ChonkyTheme> = {
+  iconOnlyButton:{
+    color:"#FFF",
+  },
   gridFileEntry: {
     fileColorTint: 'rgba(50, 50, 50, 0.4)',
     folderBackColorTint: 'rgba(50, 50, 50, 0.4)',

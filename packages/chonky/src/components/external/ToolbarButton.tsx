@@ -63,12 +63,6 @@ const useStyles = makeGlobalChonkyStyles((theme) => ({
   iconWithText: {
     marginRight: 8,
   },
-  iconOnlyButton: {
-    width: theme.toolbar.size,
-    textAlign: 'center',
-    color:important(theme.colors.defaultColor),
-
-  },
   iconDropdown: {
     fontSize: '0.7em',
     marginLeft: 2,

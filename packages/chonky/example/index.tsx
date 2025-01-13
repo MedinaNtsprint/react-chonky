@@ -426,7 +426,7 @@ const files = [
       <FileBrowser
           // darkMode={theme !== "light"}
         iconComponent={ChonkyIconFA}
-
+        darkMode={true}
           files={files}
           folderChain={pathEntries.map((name, idx) => ({
             id: `${idx}`,
