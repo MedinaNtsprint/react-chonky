@@ -73,6 +73,7 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
       return important(color);
     },
   fontFamily: important("'Poppins', sans-serif"), 
+  padding:0
 
   },
   disabledBreadcrumb: {

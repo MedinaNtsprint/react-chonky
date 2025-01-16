@@ -113,22 +113,22 @@ export const DefaultActions = {
    * Action that enables Compact view. Note that compact view is still
    * experimental and should not be used in production.
    */
-  EnableCompactView: defineFileAction({
-    // TODO: Don't enable until compact view is fully supported
-    id: 'enable_compact_view',
-    fileViewConfig: {
-      mode: FileViewMode.Compact,
-      entryHeight: 40,
-      entryWidth: 220,
-    },
-    button: {
-      name: 'Switch to Compact',
-      toolbar: true,
-      icon: ChonkyIconName.compact,
-      iconOnly: true,
+  // EnableCompactView: defineFileAction({
+  //   // TODO: Don't enable until compact view is fully supported
+  //   id: 'enable_compact_view',
+  //   fileViewConfig: {
+  //     mode: FileViewMode.Compact,
+  //     entryHeight: 40,
+  //     entryWidth: 220,
+  //   },
+  //   button: {
+  //     name: 'Switch to Compact',
+  //     toolbar: true,
+  //     icon: ChonkyIconName.compact,
+  //     iconOnly: true,
 
-    },
-  } as const),
+  //   },
+  // } as const),
   /**
    * Action that enables Grid view.
    */

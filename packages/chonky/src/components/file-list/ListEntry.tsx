@@ -81,6 +81,10 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     boxSizing: 'border-box',
     padding: [2, 4],
     zIndex: 20,
+    paddingTop: '0.5rem',
+    paddingBottom: '0.5rem',
+    paddingLeft: '0.75rem',
+    paddingRight: '0.75rem',
   },
   listFileEntryName: {
     textOverflow: 'ellipsis',
@@ -88,9 +92,15 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     flex: '1 1 300px',
-    paddingLeft: 8,
     zIndex: 20,
     borderRight: `1px solid ${theme.palette.divider}`,
+    fontSize: '0.875rem',
+    lineHeight: '1.25rem',
+    fontWeight:400,
+    paddingTop: '0.5rem',
+    paddingBottom: '0.5rem',
+    paddingLeft: '0.75rem',
+    paddingRight: '0.75rem',
 
   },
   listFileEntryProperty: {
