@@ -55,12 +55,13 @@ export const FolderChainButton: React.FC<FolderChainButtonProps> = React.memo(({
           <ChonkyIcon icon={dndIconName} fixedWidth={true} />
         </div>
       )}
-      <ToolbarButton icon={icon} className={className} text={text} disabled={disabled} onClick={onClick} />
+      <ToolbarButton icon={icon} className={className} text={text} disabled={disabled} onClick={onClick} isToolbarButton/>
     </div>
   );
 });
 
 const useStyles = makeLocalChonkyStyles((theme) => ({
+
   buttonContainer: {
     position: 'relative',
   },

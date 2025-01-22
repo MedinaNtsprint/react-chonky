@@ -26,8 +26,8 @@ const useStyles = makeLocalChonkyStyles((theme) => ({
     alignItems: 'center',
     fontSize: 18,
     fontWeight: 700,
-    backgroundColor: theme.palette.background.paper,
     borderBottom: `1px solid ${theme.palette.divider}`,
+    borderTop: `1px solid ${theme.palette.divider}`,
     padding: [2, 4],
   },
   listFileEntrySelection: {

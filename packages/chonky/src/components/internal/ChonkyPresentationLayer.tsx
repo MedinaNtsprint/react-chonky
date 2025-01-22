@@ -14,7 +14,7 @@ import { selectClearSelectionOnOutsideClick, selectFileActionIds, selectIsDnDDis
 import { ChonkyDispatch } from '../../types/redux.types';
 import { useDndContextAvailable } from '../../util/dnd-fallback';
 import { elementIsInsideButton } from '../../util/helpers';
-import { makeGlobalChonkyStyles } from '../../util/styles';
+import { important, makeGlobalChonkyStyles } from '../../util/styles';
 import { useContextMenuTrigger } from '../external/FileContextMenu-hooks';
 import { DnDFileListDragLayer } from '../file-list/DnDFileListDragLayer';
 import { HotkeyListener } from './HotkeyListener';
@@ -70,7 +70,7 @@ export const ChonkyPresentationLayer: React.FC<ChonkyPresentationLayerProps> = (
 
 const useStyles = makeGlobalChonkyStyles((theme) => ({
   chonkyRoot: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: important(theme.colors.backgroundTemplateColor),
     border: theme.root.borderStyle ? `${theme.root.borderStyle} ${theme.palette.divider}` : undefined,
     padding: theme.margins.rootLayoutMargin,
     fontSize: theme.fontSizes.rootPrimary,

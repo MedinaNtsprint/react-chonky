@@ -15,8 +15,9 @@ export const lightTheme = {
     defaultColor:"#000",
 
     textActive: '#09f',
-    buttonActive: 'rgb(255 255 255 / 1)',
+    buttonActive: 'hsl(35,99%,56%)',
     backgroundActive:'hsl(210 40% 52%)',
+    backgroundTemplateColor:'hsl(240 5% 96%)'
   },
 
   fontSizes: {
@@ -108,6 +109,9 @@ export const lightTheme = {
 export type ChonkyTheme = typeof lightTheme;
 
 export const darkThemeOverride: DeepPartial<ChonkyTheme> = {
+  colors: {
+    backgroundTemplateColor:'hsl(0 0% 20%)'
+  },
   iconOnlyButton:{
     color:"#FFF",
   },

@@ -78,8 +78,8 @@ const useFolderStyles = makeLocalChonkyStyles((theme) => ({
     top: -10,
     left: 0,
     '&:after': {
-      borderRightColor: theme.palette.background.paper,
-      borderTopColor: theme.palette.background.paper,
+      borderRightColor:  important(theme.colors.backgroundTemplateColor),
+      borderTopColor:  important(theme.colors.backgroundTemplateColor),
       borderBottomColor: 'transparent',
       borderLeftColor: 'transparent',
       borderWidth: [0, 15, 10, 0],
