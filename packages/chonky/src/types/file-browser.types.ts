@@ -172,6 +172,8 @@ export interface FileBrowserProps {
    */
   i18n?: I18nConfig;
 
+  expandedEntries?: { [fileId: string]: boolean };
+
   /**
    * Define listener for on scroll events on file lists
    */

@@ -100,7 +100,7 @@ export const DefaultActions = {
     id: 'enable_list_view',
     fileViewConfig: {
         mode: FileViewMode.List,
-        entryHeight: 30,
+        entryHeight: 60,
     },
     button: {
         name: 'Switch to List view',

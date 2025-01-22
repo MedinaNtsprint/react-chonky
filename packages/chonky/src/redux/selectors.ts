@@ -10,6 +10,10 @@ import { RootState } from '../types/redux.types';
 import { FileSortKeySelector, SortOrder } from '../types/sort.types';
 import { FileHelper } from '../util/file-helper';
 
+export const selectExpandedEntries = (state:RootState) => state.expandedEntries;
+export const selectIsExpanded = (fileId: string) => (state: RootState) => state.expandedEntries[fileId] ?? false;
+
+
 // Raw selectors
 export const selectInstanceId = (state: RootState) => state.instanceId;
 export const selectExternalFileActionHandler = (state: RootState) => state.externalFileActionHandler;

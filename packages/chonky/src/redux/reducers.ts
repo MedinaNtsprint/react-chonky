@@ -163,6 +163,15 @@ const reducers = {
     if (!state.contextMenuConfig) return;
     state.contextMenuConfig = null;
   },
+  // Acción para alternar el estado de expansión de un archivo específico
+  toggleExpand(state: RootState, action: PayloadAction<{ fileId: string }>) {
+    const { fileId } = action.payload;
+    // Alterna el estado de expansión para el archivo
+    if (!state.expandedEntries) {
+      state.expandedEntries = {};
+    }
+    state.expandedEntries[fileId] = !state.expandedEntries[fileId];
+  },
 };
 
 export const { actions: reduxActions, reducer: rootReducer } = createSlice({

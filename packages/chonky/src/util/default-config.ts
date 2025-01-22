@@ -20,7 +20,12 @@ export type ChonkyConfig = Pick<
   | 'iconComponent'
   | 'darkMode'
   | 'i18n'
+  | 'expandedEntries'
 >;
+
+export interface ExpandedEntries {
+  [fileId: string]: boolean;
+}
 
 export const defaultConfig: ChonkyConfig = {
   fileActions: null,
@@ -35,7 +40,7 @@ export const defaultConfig: ChonkyConfig = {
   disableDragAndDropProvider: false,
   defaultSortActionId: ChonkyActions.SortFilesByName.id,
   defaultFileViewActionId: ChonkyActions.EnableListView.id,
-  clearSelectionOnOutsideClick: true,
+  expandedEntries: {} as ExpandedEntries,
   iconComponent: ChonkyIconPlaceholder,
   darkMode: false,
   i18n: {},

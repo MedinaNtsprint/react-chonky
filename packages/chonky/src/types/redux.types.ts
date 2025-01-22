@@ -15,6 +15,7 @@ import { ThumbnailGenerator } from './thumbnails.types';
 
 export type RootState = {
   instanceId: string;
+  isExpanded: boolean;
 
   externalFileActionHandler: Nullable<GenericFileActionHandler<FileAction>>;
 
@@ -75,6 +76,7 @@ export type RootState = {
   // Context menu
   contextMenuMounted: boolean;
   contextMenuConfig: Nullable<ContextMenuConfig>;
+  expandedEntries:{ [fileId: string]: boolean };
 };
 
 export type ChonkyThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, null, Action<string>>;
